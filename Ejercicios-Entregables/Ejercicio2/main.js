@@ -1,0 +1,11 @@
+"use strict";
+exports.__esModule = true;
+var Matriz_1 = require("./Matriz");
+var rls = require("readline-sync");
+var y = rls.question("Ingrese la cantidad de columnas de su Matriz: ");
+var x = rls.question("Ingrese la cantidad de filas de su Matriz: ");
+var matriz = new Matriz_1.Matriz(x, y);
+matriz.imprimirMatriz();
+var buscaY = rls.question("Ingrese la posicion Y que quiera buscar de su Matriz: ");
+var buscaX = rls.question("Ingrese la posicion X que quiera buscar de su Matriz: ");
+matriz.getValor(buscaX, buscaY);
