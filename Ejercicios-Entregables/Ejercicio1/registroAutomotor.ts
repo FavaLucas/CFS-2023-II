@@ -1,4 +1,4 @@
-import { Auto } from "./Ejercicio 1/auto";
+import { Auto } from "./auto";
 import * as rls from 'readline-sync';
 export class RegistroAutomotor {
     private registroAutomotor: Auto[];

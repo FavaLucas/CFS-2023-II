@@ -1,4 +1,4 @@
-import { Auto } from "./Ejercicio 1/auto";
+import { Auto } from "./auto";
 import { RegistroAutomotor } from "./registroAutomotor";
 let registro = new RegistroAutomotor;
 let auto1 = new Auto("Ford","Lucas","Aa654SC");
