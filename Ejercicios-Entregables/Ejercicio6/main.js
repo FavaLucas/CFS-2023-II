@@ -1,0 +1,18 @@
+"use strict";
+exports.__esModule = true;
+var Cancion_1 = require("./Cancion");
+console.log("-----------------------------");
+var cancion1 = new Cancion_1.Cancion();
+cancion1.ponerTitulo("En el pais de la libertad");
+cancion1.ponerAutor("Leon Gieco");
+console.log(cancion1.mostrarTitulo());
+console.log(cancion1.mostrarAutor());
+console.log("-----------------------------");
+var cancion2 = new Cancion_1.Cancion("Solo le pido a dios", "Leon Gieco");
+console.log(cancion2.mostrarTitulo());
+console.log(cancion2.mostrarAutor());
+console.log("-----------------------------");
+var cancion3 = new Cancion_1.Cancion("Zona de promesas", "Mercedes Sosa");
+console.log(cancion3.mostrarTitulo());
+console.log(cancion3.mostrarAutor());
+console.log("-----------------------------");
