@@ -1,0 +1,89 @@
+<mxfile host="65bd71144e">
+    <diagram id="mAjABCw-SXx4wGkoDbRt" name="Page-1">
+        <mxGraphModel dx="1306" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="6" value="Casino" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+                    <mxGeometry x="510" y="570" width="180" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="-poker: Poker;&#10;-tragaMonedas: TragaMonedas;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="6">
+                    <mxGeometry y="26" width="180" height="44" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="6">
+                    <mxGeometry y="70" width="180" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="+constructor()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="6">
+                    <mxGeometry y="78" width="180" height="32" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="1" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;exitX=0.247;exitY=1.021;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="24">
+                    <mxGeometry x="-1" y="3" relative="1" as="geometry">
+                        <mxPoint x="420" y="500" as="sourcePoint"/>
+                        <mxPoint x="500" y="610" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="443" y="600"/>
+                            <mxPoint x="500" y="600"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="16" value="JuegoDeCasino" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+                    <mxGeometry x="510" y="30" width="220" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="- nombreJuego: string;&#10;- apuestaMinima: number;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="16">
+                    <mxGeometry y="26" width="220" height="44" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="16">
+                    <mxGeometry y="70" width="220" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="+ constructor(nombreJuego);&#10;+ getNombreJuego(): string;&#10;+ getApuestaMinima(): number;&#10;+ abstract comprarFichas(dineroUsr);&#10;+ abstract iniciarJuego();&#10;+ abstract apostarEnJuego();&#10;+ abstract canjearFichas();&#10;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="16">
+                    <mxGeometry y="78" width="220" height="122" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;exitX=0.227;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="19">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="500" y="270" as="sourcePoint"/>
+                        <mxPoint x="530" y="310" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="21" value="Poker" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+                    <mxGeometry x="390" y="310" width="215" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="- cantFichasUsr: number" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="21">
+                    <mxGeometry y="26" width="215" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="21">
+                    <mxGeometry y="52" width="215" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="+ constructor();&#10;+ getCantFichas(): number;&#10;+ setCantFichas(fichasUsr): void;&#10;+ comprarFichas(dineroUsr);&#10;+ iniciarJuego();&#10;+ apostarEnJuego();&#10;+ canjearFichas();" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="21">
+                    <mxGeometry y="60" width="215" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;exitX=0.575;exitY=1.007;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="19">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="610" y="260" as="sourcePoint"/>
+                        <mxPoint x="690" y="310" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="26" value="TragaMonedas" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+                    <mxGeometry x="620" y="310" width="215" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="- cantFichasUsr: number" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="26">
+                    <mxGeometry y="26" width="215" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="26">
+                    <mxGeometry y="52" width="215" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="+ constructor();&#10;+ getCantFichas(): number;&#10;+ setCantFichas(fichasUsr): void;&#10;+ comprarFichas(dineroUsr);&#10;+ iniciarJuego();&#10;+ apostarEnJuego();&#10;+ canjearFichas();" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="26">
+                    <mxGeometry y="60" width="215" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="1" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;exitX=0.569;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="29" target="7">
+                    <mxGeometry x="-1" y="3" relative="1" as="geometry">
+                        <mxPoint x="350" y="400" as="sourcePoint"/>
+                        <mxPoint x="742" y="630" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="742" y="628"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
