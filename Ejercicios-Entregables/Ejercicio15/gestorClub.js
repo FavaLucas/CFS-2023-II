@@ -11,8 +11,14 @@ var GestorClub = /** @class */ (function () {
         this.nombreDelClub = nombreDelClub;
         this.sociosDelClub = [];
     }
+    // public guardarInformacion(socio: Jugador): void {
+    //   const fileDescriptor = fs.openSync(this.path, 'a'); 
+    //   fs.appendFileSync(fileDescriptor, `${JSON.stringify(socio)}\n`, {encoding: 'utf8', flag: 'a'});
+    //   fs.closeSync(fileDescriptor); // Cierra el archivo
+    // }
     GestorClub.prototype.guardarInformacion = function (socio) {
-        fs.writeFileSync(this.path, "".concat(JSON.stringify([socio]), "\n"), { flag: "a" });
+        this.sociosDelClub.push(socio);
+        fs.writeFileSync(this.path, "".concat(JSON.stringify(this.sociosDelClub, null, 2)));
     };
     GestorClub.prototype.altaDeSocio = function () {
         var nombre = rls.question("Ingrese el nombre del socio: ");
@@ -21,7 +27,8 @@ var GestorClub = /** @class */ (function () {
         var documento = rls.question("Ingrese el documento del socio: ");
         var telefono = rls.question("Ingrese el telefono del socio: ");
         var miembroDesde = rls.question("Ingrese el miembro desde: ");
-        this.guardarInformacion(new jugador_1.Jugador(nombre, apellido, fechaNaciomiento, documento, telefono, miembroDesde));
+        var deporte = rls.question("Futbol = 0, Tenis = 1, Natacion = 2");
+        this.guardarInformacion(new jugador_1.Jugador(nombre, apellido, fechaNaciomiento, documento, telefono, miembroDesde, deporte));
     };
     return GestorClub;
 }());

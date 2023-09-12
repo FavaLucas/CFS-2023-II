@@ -1,5 +1,5 @@
-// export enum Deportes {
-//     "Futbol",
-//     "Tenis",
-//     "Natacion"
-// } 
+ export enum Deportes {
+     "Futbol",
+     "Tenis",
+     "Natacion"
+} 

@@ -16,13 +16,14 @@ var __extends = (this && this.__extends) || (function () {
 })();
 exports.__esModule = true;
 exports.Jugador = void 0;
+var deporte_1 = require("./deporte");
 var miembroClub_1 = require("./miembroClub");
 var Jugador = /** @class */ (function (_super) {
     __extends(Jugador, _super);
-    //private deporte: Deportes;
-    function Jugador(nombre, apellido, fechaNac, documento, telefono, miembroDesde, deporte) {
-        return _super.call(this, nombre, apellido, fechaNac, documento, telefono, miembroDesde) || this;
-        //this.deporte = deporte;
+    function Jugador(nombre, apellido, fechaNac, documento, telefono, miembroDesde, indiceDeporte) {
+        var _this = _super.call(this, nombre, apellido, fechaNac, documento, telefono, miembroDesde) || this;
+        _this.deporte = deporte_1.Deportes[indiceDeporte];
+        return _this;
     }
     return Jugador;
 }(miembroClub_1.MiembroClub));
