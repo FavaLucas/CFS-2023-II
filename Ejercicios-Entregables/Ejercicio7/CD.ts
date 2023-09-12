@@ -20,6 +20,7 @@ export class CD {
     this.canciones.splice(indice - 1, 1);
     console.log("Listado despues de Eliminar");
     console.log(this.canciones);
+    this.contador = this.contador-1;
   }
 
   public mostrarCancionNro(indice: number): void {
