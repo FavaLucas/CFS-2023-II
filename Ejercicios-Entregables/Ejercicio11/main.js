@@ -1,0 +1,13 @@
+"use strict";
+exports.__esModule = true;
+var Mago_1 = require("./Mago");
+var Guerrero_1 = require("./Guerrero");
+var Gandalf = new Mago_1.Mago(40, 100, 'Gandalf', 30);
+var Arturo = new Guerrero_1.Guerrero(60, 150, 'Arturo', 40);
+Gandalf.atacar(Arturo);
+Arturo.atacar(Gandalf);
+Gandalf.curarse(100);
+Gandalf.lanzarEchizo();
+Arturo.usarEscido();
+Arturo.curarse(1000);
+Arturo.atacar(Gandalf);
