@@ -6,7 +6,6 @@ class DBConector {
   private constructor() {
     this.conexionDb = new RTCPeerConnection();
   }
-
   public static getInstance() {
     if (this.me) {
       return this.me;
@@ -14,15 +13,10 @@ class DBConector {
     this.me = new DBConector();
     return this.me;
   }
-
   public getConexion() {
     return this.conexionDb;
   }
 }
 
-
-
-
 DBConector.getInstance().getConexion();
-
 DBConector.getInstance().getConexion();
