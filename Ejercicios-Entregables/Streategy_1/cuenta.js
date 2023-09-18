@@ -7,22 +7,17 @@ var Cuenta = /** @class */ (function () {
         this.transacciones = [];
         this.saldo = 0;
     }
-    Cuenta.prototype.depositar = function (monto, dolar) {
-        this.transacciones.push(monto);
-        this.saldo += dolar;
-        monto.setValorTransaccion(dolar);
-        console.log("Ustes ha depositado: $", dolar, ".Su nuevo saldo es de: $", this.saldo);
+    Cuenta.prototype.depositar = function (operacion) {
+        this.transacciones.push(operacion);
+        this.saldo += operacion.getMonto();
     };
-    Cuenta.prototype.retirar = function (monto, dolar) {
-        this.transacciones.push(monto);
-        this.saldo -= dolar;
-        monto.setValorTransaccion(dolar);
-        console.log("Ustes ha retirado: $", dolar, ".Su nuevo saldo es de: $", this.saldo);
+    Cuenta.prototype.retirar = function (operacion) {
+        this.transacciones.push(operacion);
+        this.saldo -= operacion.getMonto();
     };
     Cuenta.prototype.listarTransacciones = function () {
-        this.transacciones.forEach(function (element) {
-            console.log("tipo transaccion :".concat(element.getTipoTransaccion(), ", monto: ").concat(element.getValorTransaccion(), "  "));
-        });
+        console.log(this.transacciones);
+        console.log("Saldo actual: ".concat(this.saldo, " u$d"));
     };
     return Cuenta;
 }());

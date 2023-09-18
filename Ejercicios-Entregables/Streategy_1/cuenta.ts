@@ -1,9 +1,10 @@
 import { Context } from "./Context";
 import { Strategy } from "./Strategy";
+import { Transaccion } from "./Transaccion";
 
 export class Cuenta {
     protected titular: string;
-    protected transacciones: Strategy[];
+    protected transacciones: Transaccion[];
     private saldo: number;
 
     constructor(titular: string) {
@@ -12,25 +13,20 @@ export class Cuenta {
         this.saldo = 0;
     }
 
-    public depositar(monto: Strategy,dolar:number): void {
-        this.transacciones.push(monto)
-        this.saldo += dolar;
-        monto.setValorTransaccion(dolar)
-        console.log("Ustes ha depositado: $", dolar, ".Su nuevo saldo es de: $", this.saldo);
+    public depositar(operacion:Transaccion): void {
+        this.transacciones.push(operacion)
+        this.saldo+=operacion.getMonto()
     }
 
-    public retirar(monto: Strategy,dolar:number): void {
-        this.transacciones.push(monto)
-        this.saldo -= dolar;
-        monto.setValorTransaccion(dolar);
-        console.log("Ustes ha retirado: $", dolar, ".Su nuevo saldo es de: $", this.saldo);
+    public retirar(operacion:Transaccion): void {
+        this.transacciones.push(operacion)
+        this.saldo-=operacion.getMonto()
     }
 
     public listarTransacciones():void{
-        this.transacciones.forEach(element => {
-            console.log(`tipo transaccion :${element.getTipoTransaccion()}, monto: ${element.getValorTransaccion()}  `)                
-        });
-    }
+        console.log(this.transacciones)
+        console.log(`Saldo actual: ${this.saldo} u$d`)
+    } 
 }
 
 
