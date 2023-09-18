@@ -5,7 +5,7 @@ export class Cuenta {
 
     constructor(id: number, saldo: number, titular: string) {
         this.id = id;
-        this.saldo = id;
+        this.saldo = saldo;
         this.titular = titular;
     }
 

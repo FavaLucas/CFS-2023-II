@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var mamifero_1 = require("./mamifero");
+var reptil_1 = require("./reptil");
+var murciegalo_1 = require("./murciegalo");
+var golbat = new murciegalo_1.murciegalo("Golbat", 74, "Violeta", "Onda Sonica");
+golbat.utilizarEcolocalizacion();
+var pikachu = new mamifero_1.mamifero("Pikachu", 105, "Amarillo");
+pikachu.comer();
+console.log("Pikachu, ATACK TRUENOOO!!!!");
+var ekans = new reptil_1.reptil("Ekans", 25, "Violeta");
+ekans.tempCorporal();
+console.log("Ekans, utiliza Picotazo Venenoso.");
