@@ -1,5 +1,5 @@
 "use strict";
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.GestorClub = void 0;
 var fs = require("fs");
 var path = require("path");
@@ -27,7 +27,7 @@ var GestorClub = /** @class */ (function () {
         var documento = rls.question("Ingrese el documento del socio: ");
         var telefono = rls.question("Ingrese el telefono del socio: ");
         var miembroDesde = rls.question("Ingrese el miembro desde: ");
-        var deporte = rls.question("Futbol = 0, Tenis = 1, Natacion = 2");
+        var deporte = rls.question("Futbol = 0, Tenis = 1, Natacion = 2: ");
         this.guardarInformacion(new jugador_1.Jugador(nombre, apellido, fechaNaciomiento, documento, telefono, miembroDesde, deporte));
     };
     return GestorClub;

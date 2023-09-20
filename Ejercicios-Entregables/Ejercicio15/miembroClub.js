@@ -1,5 +1,5 @@
 "use strict";
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.MiembroClub = void 0;
 var MiembroClub = /** @class */ (function () {
     function MiembroClub(nombre, apellido, fechaNac, documento, telefono, miembroDesde) {
