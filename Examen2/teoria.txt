@@ -1,0 +1,20 @@
+• ¿Qué funcionalidades nos provee NPM?
+    Npm nos permite utilizar las herramientas de Node para poder realizar nuestros programas.
+
+• ¿Qué diferencias hay entre JavaScript y TypeScript?
+    TypeScript es un lenguaje de programacion tipado lo que obliga al programador a codificar de manera mas estricta mientras que JavaScript permite omitir la declaracion de tipos siendo mas propenso a la generacion de errores.
+    
+
+• ¿Qué es el constructor de una clase?
+    Es un metodo especial que tienen las clases que permite instaciar objetos. En caso de no ser definido en la clase, se genera un constructor automatico vacio. Este metodo puede recibir parametros que seran tomados como valores iniciales de los atributos de dicha clase/objeto.
+
+• ¿Se deben usar variables internas públicas en una clase? ¿Por qué?
+    No, no se deben utilizar variables internas publicas por que se romple con el concepto de encapsulamiento. 
+    En caso de querer que un atributo cambie de estado, se hace con su metodo set.
+
+• ¿Para qué sirve una interface?
+    Se utilizan para declarar tipos de objetos. Son contratos que las clases que la implementan deben cumplir, es decir deben definir los metodos que la interface propone. Se utiliza para emular las herencias multiples. 
+
+• ¿Cuál es la utilidad de los bloques try/catch?
+    Se utilizan para hacer validaciones de datos/parametros y asi reducir la cantidad de errores al momento de correr nuestro codigo. Al poder crear nuestros propios tipos de errores, es mas facil detectar donde se genera un problema y asi poder resolverlo ahorrandonos tiempo.
+    
