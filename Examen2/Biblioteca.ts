@@ -107,6 +107,11 @@ export class Bilioteca {
     return encontrado;
     }
 
+    /**
+     * Metodo que realiza la busqueda segun el parametro ingresado Autor, si lo encuentra retorna un arreglo con todos los articulos escritos por dicho autor. 
+     * @param buscarAutor 
+     * @returns 
+     */
     public buscarPorAutor(buscarAutor: string): ArticuloLectura[] | undefined {
         let articulosEncontrados: ArticuloLectura [] = [];
         let encontrados = false
@@ -121,4 +126,25 @@ export class Bilioteca {
         }
         return articulosEncontrados;
     } 
+
+    /**
+     * Metodo que recibe un id de texto para buscar en el arreglo, si lo encuentra lo elimina y retorna true.
+     * @param idTexto 
+     * @returns 
+     */
+    public eliminar (idTexto: number): boolean {
+      let encontrado = false;
+      for (let i = 0; i < this.elementos.length; i++) {
+        if(this.elementos[i].getIsbn() == idTexto){
+          encontrado = true;
+          console.log("El articulo fue eliminado");
+          this.elementos.splice(i, 1);
+          break;
+        }
+      }
+      if (!encontrado){
+        console.log("El articulo buscado no se encuentra en la biblioteca");
+      }
+      return encontrado;
+    }
 }

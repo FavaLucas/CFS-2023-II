@@ -36,3 +36,7 @@ console.log("--------Busqueda de Autor Borges---------")
 console.log(biblioteca.buscarPorAutor("Borges"));
 console.log("--------Busqueda el id 666 para cambiar paginas---------")
 console.log(biblioteca.modificarPaginas(666, 123));
+console.log("--------Busqueda el id 666 y si lo encuentra lo elimina de la biblioteca---------")
+console.log(biblioteca.eliminar(666));
+console.log("-----------------")
+console.log(biblioteca);
